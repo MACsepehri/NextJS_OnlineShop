@@ -6,31 +6,36 @@ function render_cats(render_categories) {
         return (
             <div className="all-products">
                 <div className="category-box">
-                    <h2>Phones</h2>
+                    <h2><a href="/category/phones">Phones</a></h2>
+                    <p>for show all products in this category click on it</p>
 
                     <Product productData={data.mobile} />
                 </div>
                 <br/>
                 <div className="category-box">
-                    <h2>PC | LapTop</h2>
+                    <h2><a href="/category/pc-and-laptop">PC and LapTop</a></h2>
+                    <p>for show all products in this category click on it</p>
 
                     <Product productData={data.computer} />
                 </div>
                 <br/>
                 <div className="category-box">
-                    <h2>Gaming Object</h2>
+                    <h2><a href="/category/gaming-objects">Gaming Object</a></h2>
+                    <p>for show all products in this category click on it</p>
 
                     <Product productData={data.gaming} />
                 </div>
                 <br/>
                 <div className="category-box">
-                    <h2>Headphone and Airpods</h2>
+                    <h2><a href="/category/headphone-and-airpods">Headphone and Airpods</a></h2>
+                    <p>for show all products in this category click on it</p>
 
                     <Product productData={data.headphone} />
                 </div>
                 <br/>
                 <div className="category-box">
-                    <h2>Hand Watch</h2>
+                    <h2><a href="/category/hand-watch">Hand Watch</a></h2>
+                    <p>for show all products in this category click on it</p>
 
                     <Product productData={data.watch} />
                 </div>
