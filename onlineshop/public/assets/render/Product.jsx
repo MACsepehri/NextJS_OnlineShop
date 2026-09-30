@@ -1,4 +1,4 @@
-import { data } from "../data/data";
+import { Link } from "react-router-dom";
 
 export default function Product({productData}) {
     return (
@@ -18,7 +18,7 @@ export default function Product({productData}) {
                         <div className="pb-flex-bottom">
                             <p>{value.price}$</p><p>ID: {value.id}</p>
                         </div>
-                        <a style={{color:'#0088ff'}} href={"/product/"+value.id}>View</a><br />
+                        <Link style={{color:'#0088ff'}} to={"/product/"+value.id}>View</Link><br />
                     </div>
                 );
             })}
