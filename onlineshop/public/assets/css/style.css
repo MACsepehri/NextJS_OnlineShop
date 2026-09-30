@@ -1,0 +1,59 @@
+.all-products {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+}
+
+.category-box {
+    width: 100%;
+    text-align: left;
+}
+
+.products {
+    display: flex;
+    gap: 10px;
+    flex-direction: row;
+}
+
+.product-image {
+    width: 140px;
+    height: 160px; 
+    object-fit: contain;
+    object-position: center;
+    display: block;
+    margin: auto;
+    mix-blend-mode: multiply;
+}
+
+.product-box h3 {
+    margin: 0;
+    padding: 16px;
+}
+
+.product-box > pre {
+    width: 290px;
+    margin: auto;
+    text-align: center;
+    white-space: pre-wrap;
+    font-size: 15px;
+}
+
+.product-box {
+    overflow: hidden;
+    border: 1px solid #c6c6c6;
+    background: #eee;
+    width: 300px;
+    text-align: center;
+    display: flex;           /* اضافه شود */
+    flex-direction: column;  /* اضافه شود */
+}
+
+.pb-flex-bottom {
+    display: flex;
+    flex-direction: row;     /* این خط باعث میشه کنار هم باشن */
+    gap: 20px;               /* فاصله بینشون */
+    justify-content: center; /* وسط چین */
+    margin-top: auto;        /* این خط جادو میکنه و میندازشون پایین باکس */
+    padding: 10px 0;         /* فاصله از پایین */
+}

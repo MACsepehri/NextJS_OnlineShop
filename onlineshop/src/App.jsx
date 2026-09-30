@@ -1,4 +1,4 @@
-import Render from "@/public/assets/render/Render";
+import Render from "../public/assets/render/Render.jsx";
 import '../public/assets/css/style.css'
 
 export default function Home() {
