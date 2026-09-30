@@ -18,6 +18,7 @@ export default function Product({productData}) {
                         <div className="pb-flex-bottom">
                             <p>{value.price}$</p><p>ID: {value.id}</p>
                         </div>
+                        <a href={"/product/"+value.id}>View</a><br />
                     </div>
                 );
             })}
