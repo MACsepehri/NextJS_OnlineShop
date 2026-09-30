@@ -2,6 +2,7 @@ import { Routes, Route } from 'react-router-dom';
 import Render from "../public/assets/render/Render.jsx";
 import CategoryPage from './category/[category_name]/page.jsx'; 
 import '../public/assets/css/style.css';
+import AllProducts from './product/page.jsx';
 
 export default function App() {
     return (
@@ -16,6 +17,7 @@ export default function App() {
             />
 
             <Route path="/category/:category" element={<div className='main'><CategoryPage /></div>} />
+            <Route path="/product" element={<div className='main'><AllProducts /></div>} />
         </Routes>
     );
 }
