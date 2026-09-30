@@ -66,3 +66,7 @@ a {
 a:hover {
     text-decoration: underline;
 }
+
+.main {
+    margin-top: 200px;
+}
