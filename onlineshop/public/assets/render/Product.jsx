@@ -1,0 +1,26 @@
+import { data } from "../data/data";
+
+export default function Product({productData}) {
+    return (
+        <div className="products">
+            {productData.slice(0, 5).map((value, index) => {
+                return (
+                    <div className="product-box" key={index}>
+                        <div><br />
+                            <img className="product-image"
+                                src={value.image}
+                                alt={value.name}
+                            />
+                        </div>
+
+                        <h3>{value.name}</h3>
+                        <pre>{value.desc}</pre>
+                        <div className="pb-flex-bottom">
+                            <p>{value.price}$</p><p>ID: {value.id}</p>
+                        </div>
+                    </div>
+                );
+            })}
+        </div>
+    )
+}
