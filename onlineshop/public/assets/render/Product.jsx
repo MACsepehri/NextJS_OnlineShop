@@ -16,7 +16,7 @@ export default function Product({productData}) {
                         <h3>{value.name}</h3>
                         <pre>{value.desc}</pre>
                         <div className="pb-flex-bottom">
-                            <p>{value.price}$</p><p>ID: {value.id}</p>
+                            <p>{value.price}$</p><p>id: {value.id}<br/></p>
                         </div>
                         <Link style={{color:'#0088ff'}} to={"/product/"+value.id}>View</Link><br />
                     </div>

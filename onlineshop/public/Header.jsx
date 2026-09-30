@@ -6,7 +6,8 @@ export default function Header() {
             <div className="hleft">
                 <div className="h-left">
                     <nav>
-                        <Link href={'/product'}>View all</Link>
+                        <Link to={'/product'}>View all</Link>
+                        <Link to={'/'}>Main Page</Link>
                         <button className="auth-btn">Auth</button>
                     </nav>
                 </div>

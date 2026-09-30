@@ -15,7 +15,7 @@ export default function App() {
                 } 
             />
 
-            <Route path="/category/:category" element={<CategoryPage />} />
+            <Route path="/category/:category" element={<div className='main'><CategoryPage /></div>} />
         </Routes>
     );
 }
