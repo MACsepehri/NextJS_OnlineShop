@@ -1,0 +1,21 @@
+.inputbox {
+    width: 180px;
+    padding: 10px;
+    border-radius: 8px;
+    border: 2px solid #0059a2;
+    background: #bbe0ff;
+}
+
+.inputbox:focus {
+    outline: none;
+}
+
+.submit-btn {
+    width: 140px;
+    padding: 5px;
+    border-radius: 7px;
+    border: 2px solid #0059a2;
+    background: #76c1ff;
+    color: #0059a2;
+    cursor: pointer;
+}

@@ -8,7 +8,7 @@ export default function Header() {
                     <nav>
                         <Link to={'/product'}>View all</Link>
                         <Link to={'/'}>Main Page</Link>
-                        <button className="auth-btn">Auth</button>
+                        <button className="auth-btn" onClick={()=>{window.location.href='/auth'}}>Auth</button>
                     </nav>
                 </div>
             </div>
