@@ -5,13 +5,12 @@ import Product from '../../../public/assets/render/Product';
 export default function CategoryPage() {
     const { category } = useParams();
     let category_data;
-    let id;
 
-    if (category === 'phones') { id = 1; category_data = data.mobile; }
-    else if (category === 'pc-and-laptop') { id = 2; category_data = data.computer; }
-    else if (category === 'gaming-objects') { id = 3; category_data = data.gaming; }
-    else if (category === 'headphone-and-airpods') { id = 4; category_data = data.headphone; }
-    else if (category === 'hand-watch') { id = 5; category_data = data.watch; }
+    if (category === 'phones') { category_data = data.mobile; }
+    else if (category === 'pc-and-laptop') { category_data = data.computer; }
+    else if (category === 'gaming-objects') { category_data = data.gaming; }
+    else if (category === 'headphone-and-airpods') { category_data = data.headphone; }
+    else if (category === 'hand-watch') { category_data = data.watch; }
 
     return (
         <div className="all-products">

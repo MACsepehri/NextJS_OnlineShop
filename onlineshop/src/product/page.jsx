@@ -1,27 +1,40 @@
 import { Link } from "react-router-dom"
 import { data } from "../../public/assets/data/data"
+import Product from "../../public/assets/render/Product"
 
 export default function AllProducts() {
-    let all = [...data.computer,...data.gaming,...data.headphone,...data.mobile,...data.watch]
-    { 
-        all.map((value,index)=>{
-            return (
-                <div className="product-box" key={index}>
-                    <div><br />
-                        <img className="product-image"
-                            src={value.image}
-                            alt={value.name}
-                        />
-                    </div>
-
-                    <h3>{value.name}</h3>
-                    <pre>{value.desc}</pre>
-                    <div className="pb-flex-bottom">
-                        <p>{value.price}$</p><p>id: {value.id}<br/></p>
-                    </div>
-                    <Link style={{color:'#0088ff'}} to={"/product/"+value.id}>View</Link><br />
-                </div>
-            )
-        })
-    }
+    return (
+        <div className="all-products">
+            <div className="category-box">
+                <h2>Phones</h2>
+                { 
+                <Product productData={data.mobile} to_slices={20} />
+                }
+            </div>
+            <div className="category-box">
+                <h2>PC and LapTop</h2>
+                { 
+                <Product productData={data.computer} to_slices={20} />
+                }
+            </div>
+            <div className="category-box">
+                <h2>Gaming Object</h2>
+                { 
+                <Product productData={data.gaming} to_slices={20} />
+                }
+            </div>
+            <div className="category-box">
+                <h2>Headphone and Airpods</h2>
+                { 
+                <Product productData={data.headphone} to_slices={20} />
+                }
+            </div>
+            <div className="category-box">
+                <h2>Hand Watch</h2>
+                { 
+                <Product productData={data.watch} to_slices={20} />
+                }
+            </div>
+        </div>
+    )
 }
