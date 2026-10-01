@@ -3,6 +3,7 @@ import Render from "../public/assets/render/Render.jsx";
 import CategoryPage from './category/[category_name]/page.jsx'; 
 import '../public/assets/css/style.css';
 import AllProducts from './product/page.jsx';
+import ProductPage from './product/[id]/page.jsx';
 
 export default function App() {
     return (
@@ -18,6 +19,7 @@ export default function App() {
 
             <Route path="/category/:category" element={<div className='main'><CategoryPage /></div>} />
             <Route path="/product" element={<div className='main'><AllProducts /></div>} />
+            <Route path="/product/:product_id" element={<div className='main'><ProductPage /></div>} />
         </Routes>
     );
 }
